@@ -1,0 +1,666 @@
+{
+	"info": {
+		"_postman_id": "40ed9b9b-36e6-4812-b55d-ad9980844b47",
+		"name": "crud-escola - API v1",
+		"description": "Collection com todas as rotas: alunos, professores, cursos, disciplinas, turmas (base /api/v1)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47434763"
+	},
+	"item": [
+		{
+			"name": "Alunos",
+			"item": [
+				{
+					"name": "GET /api/v1/alunos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/alunos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/v1/alunos/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/alunos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"alunos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/v1/alunos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nome\":\"Lucas Lima\",\"email\":\"lucas.lima@example.com\",\"cpf\":\"11122233344\",\"telefone\":\"11911112222\",\"dataNascimento\":\"2001-01-01\"}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/alunos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/v1/alunos/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"João S. Silva\",\r\n  \"email\": \"joaosilva@example.com\",\r\n  \"cpf\": \"12345678900\",\r\n  \"telefone\": \"11900001111\",\r\n  \"dataNascimento\": \"1990-05-10\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/alunos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"alunos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/v1/alunos/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/alunos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"alunos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Professores",
+			"item": [
+				{
+					"name": "GET /api/v1/professores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/professores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"professores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/v1/professores/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/professores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"professores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/v1/professores",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Pedro Lima\",\r\n  \"email\": \"pedro.lima@example.com\",\r\n  \"cpf\": \"22233344455\",\r\n  \"disciplina\": \"Álgebra\",\r\n  \"tempoCasa\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/professores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"professores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/v1/professores/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"João lucas\",\r\n  \"email\": \"Joaolucas@gmail.com\",\r\n  \"cpf\": \"22233344455\",\r\n  \"disciplina\": \"Engenharia de Software\",\r\n  \"tempoCasa\": 5\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/professores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"professores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/v1/professores/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/professores/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"professores",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cursos",
+			"item": [
+				{
+					"name": "GET /api/v1/cursos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/cursos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cursos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/v1/cursos/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/cursos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cursos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/v1/cursos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nome\":\"Álgebra\",\"cargaHoraria\": 250, \"ativo\": \"true\"}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/cursos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cursos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/v1/cursos/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nome\":\"Programação Frontend\",\"cargaHoraria\": 150, \"ativo\": \"true\"}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/cursos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cursos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/v1/cursos/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/cursos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"cursos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "matriculas",
+			"item": [
+				{
+					"name": "GET /api/v1/matriculas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/matriculas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"matriculas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/v1/matriculas/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/matriculas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"matriculas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/v1/matriculas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"alunoId\": \"5\", \"turmaId\": \"2\", \"status\": \"ativa\", \r\n\"data\": \"2025-12-09\" }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/matriculas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"matriculas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/v1/matriculas/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"alunoId\": \"1\", \"turmaId\": \"4\", \"status\": \"ativa\", \r\n\"data\": \"2025-5-09\" }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/matriculas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"matriculas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/v1/matriculas/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/matriculas/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"matriculas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Turmas",
+			"item": [
+				{
+					"name": "GET /api/v1/turmas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/turmas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"turmas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/v1/turmas/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/turmas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"turmas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/v1/turmas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"cursoId\": \"4\", \"semestre\": \"2025.3\", \"turno\": \"matutino\", \"vagas\": \"15\" }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/turmas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"turmas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/v1/turmas/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"cursoId\": \"2\", \"semestre\": \"2025.4\", \"turno\": \"noturno\", \"vagas\": \"50\" }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/turmas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"turmas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/v1/turmas/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/turmas/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"turmas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

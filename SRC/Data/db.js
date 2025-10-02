@@ -1,5 +1,5 @@
 const db = {
-    seq: { alunos: 3, professores: 3, cursos: 3, turmas: 3, matriculas: 3 },
+    seq: { alunos: 4, professores: 4, cursos: 4, turmas: 4, matriculas: 4 },
   
     alunos: [
       { id: 1, nome: 'Gustavo Simoes', email: 'gustavo@iesb.com', cpf: '12345678900', telefone: '(61) 94002-8922', dataNascimento: '2004-08-03' },
@@ -10,7 +10,7 @@ const db = {
     
   
     professores: [
-      { id: 1, nome: 'maria joaquina', email: 'maria.joaquina@escola.com', cpf: '12345678901', disciplina: 'Matemática', tempoCasa: 3 },
+      { id: 1, nome: 'maria joaquina', email: 'maria.joaquina@escola.com', cpf: '12345678901', disciplina: 'Engenharia de Software', tempoCasa: 3 },
       { id: 2, nome: 'bruno pereira', email: 'bruno.pereira@escola.com', cpf: '98765410000', disciplina: 'História', tempoCasa: 1 },
       { id: 3, nome: 'josé bizerra', email: 'jose.bizerra@escola.com', cpf: '45678912377', disciplina: 'Programação', tempoCasa: 2 },
       { id: 4, nome: 'carlos miguel', email: 'carlos.miguel@escola.com', cpf: '9058912377', disciplina: 'ciencias de dados', tempoCasa: 4 }
