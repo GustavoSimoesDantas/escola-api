@@ -1,0 +1,203 @@
+{
+  "info": {
+    "name": "crud-escola - API v1",
+    "_postman_id": "c1a2b3c4-d5e6-7890-abcd-ef0123456789",
+    "description": "Collection com todas as rotas: alunos, professores, cursos, disciplinas, turmas (base /api/v1)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Alunos",
+      "item": [
+        {
+          "name": "GET /api/v1/alunos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "http://localhost:3000/api/v1/alunos", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api","v1","alunos"] }
+          }
+        },
+        {
+          "name": "GET /api/v1/alunos/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "http://localhost:3000/api/v1/alunos/1", "protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","alunos","1"] }
+          }
+        },
+        {
+          "name": "POST /api/v1/alunos",
+          "request": {
+            "method": "POST",
+            "header": [{ "key":"Content-Type","value":"application/json" }],
+            "body": { "mode":"raw", "raw": "{\"nome\":\"Lucas Lima\",\"email\":\"lucas.lima@example.com\",\"cpf\":\"11122233344\",\"telefone\":\"11911112222\",\"dataNascimento\":\"2001-01-01\"}" },
+            "url": { "raw": "http://localhost:3000/api/v1/alunos", "protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","alunos"] }
+          }
+        },
+        {
+          "name": "PUT /api/v1/alunos/:id",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key":"Content-Type","value":"application/json" }],
+            "body": { "mode":"raw", "raw":"{\"telefone\":\"11900001111\",\"nome\":\"João S. Silva\"}" },
+            "url": { "raw":"http://localhost:3000/api/v1/alunos/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","alunos","1"] }
+          }
+        },
+        {
+          "name": "DELETE /api/v1/alunos/:id",
+          "request": {
+            "method":"DELETE",
+            "header": [],
+            "url": { "raw":"http://localhost:3000/api/v1/alunos/2","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","alunos","2"] }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Professores",
+      "item": [
+        {
+          "name": "GET /api/v1/professores",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/professores","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","professores"] } }
+        },
+        {
+          "name": "GET /api/v1/professores/:id",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/professores/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","professores","1"] } }
+        },
+        {
+          "name": "POST /api/v1/professores",
+          "request": {
+            "method":"POST",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body": {"mode":"raw","raw":"{\"nome\":\"Pedro Lima\",\"email\":\"pedro.lima@example.com\",\"cpf\":\"22233344455\",\"curso\":\"Matemática\",\"disciplina\":\"Álgebra\"}"},
+            "url":{"raw":"http://localhost:3000/api/v1/professores","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","professores"]}
+          }
+        },
+        {
+          "name":"PUT /api/v1/professores/:id",
+          "request": {
+            "method":"PUT",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"disciplina\":\"Geometria\"}"},
+            "url":{"raw":"http://localhost:3000/api/v1/professores/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","professores","1"]}
+          }
+        },
+        {
+          "name":"DELETE /api/v1/professores/:id",
+          "request": { "method":"DELETE", "header": [], "url": { "raw":"http://localhost:3000/api/v1/professores/2","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","professores","2"] } }
+        }
+      ]
+    },
+
+    {
+      "name": "Cursos",
+      "item": [
+        {
+          "name":"GET /api/v1/cursos",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/cursos","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","cursos"] } }
+        },
+        {
+          "name":"GET /api/v1/cursos/:id",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/cursos/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","cursos","1"] } }
+        },
+        {
+          "name":"POST /api/v1/cursos",
+          "request": {
+            "method":"POST",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"nome\":\"Medicina\",\"descricao\":\"Curso de Medicina\",\"duracaoMeses\":72}"},
+            "url":{"raw":"http://localhost:3000/api/v1/cursos","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","cursos"]}
+          }
+        },
+        {
+          "name":"PUT /api/v1/cursos/:id",
+          "request": {
+            "method":"PUT",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"duracaoMeses\":60}"},
+            "url":{"raw":"http://localhost:3000/api/v1/cursos/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","cursos","1"]}
+          }
+        },
+        {
+          "name":"DELETE /api/v1/cursos/:id",
+          "request": { "method":"DELETE", "header": [], "url": { "raw":"http://localhost:3000/api/v1/cursos/2","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","cursos","2"] } }
+        }
+      ]
+    },
+
+    {
+      "name": "Disciplinas",
+      "item": [
+        {
+          "name":"GET /api/v1/disciplinas",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/disciplinas","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","disciplinas"] } }
+        },
+        {
+          "name":"GET /api/v1/disciplinas/:id",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/disciplinas/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","disciplinas","1"] } }
+        },
+        {
+          "name":"POST /api/v1/disciplinas",
+          "request": {
+            "method":"POST",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"nome\":\"Física I\",\"codigo\":\"FIS101\",\"cargaHoraria\":80}"},
+            "url":{"raw":"http://localhost:3000/api/v1/disciplinas","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","disciplinas"]}
+          }
+        },
+        {
+          "name":"PUT /api/v1/disciplinas/:id",
+          "request": {
+            "method":"PUT",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"cargaHoraria\":90}"},
+            "url":{"raw":"http://localhost:3000/api/v1/disciplinas/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","disciplinas","1"]}
+          }
+        },
+        {
+          "name":"DELETE /api/v1/disciplinas/:id",
+          "request": { "method":"DELETE", "header": [], "url": { "raw":"http://localhost:3000/api/v1/disciplinas/2","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","disciplinas","2"] } }
+        }
+      ]
+    },
+
+    {
+      "name": "Turmas",
+      "item": [
+        {
+          "name":"GET /api/v1/turmas",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/turmas","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","turmas"] } }
+        },
+        {
+          "name":"GET /api/v1/turmas/:id",
+          "request": { "method":"GET", "header": [], "url": { "raw":"http://localhost:3000/api/v1/turmas/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","turmas","1"] } }
+        },
+        {
+          "name":"POST /api/v1/turmas",
+          "request": {
+            "method":"POST",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"nome\":\"Turma C\",\"cursoId\":\"1\",\"disciplinaId\":\"1\",\"professorId\":\"1\",\"alunosIds\":[\"1\",\"2\"]}"},
+            "url":{"raw":"http://localhost:3000/api/v1/turmas","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","turmas"]}
+          }
+        },
+        {
+          "name":"PUT /api/v1/turmas/:id",
+          "request": {
+            "method":"PUT",
+            "header":[{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"nome\":\"Turma C Atualizada\",\"alunosIds\":[\"1\"]}"},
+            "url":{"raw":"http://localhost:3000/api/v1/turmas/1","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","turmas","1"]}
+          }
+        },
+        {
+          "name":"DELETE /api/v1/turmas/:id",
+          "request": { "method":"DELETE", "header": [], "url": { "raw":"http://localhost:3000/api/v1/turmas/2","protocol":"http","host":["localhost"],"port":"3000","path":["api","v1","turmas","2"] } }
+        }
+      ]
+    }
+
+  ],
+  "protocolProfileBehavior": {}
+}
