@@ -101,12 +101,12 @@ API REST para gerenciamento de alunos, professores, cursos, turmas e matrículas
 
 ## Integrantes e Contribuições
 
-- **Gustavo Simoes Dantas** ([GustavoSimoesDantas](https://github.com/GustavoSimoesDantas))
+- **Gustavo Simoes Dantas-24214290075** ([GustavoSimoesDantas](https://github.com/GustavoSimoesDantas))
   - Estruturação do projeto, implementação dos controllers, rotas e banco de dados em memória.
-- **Gabriel Ataides** ([ataides-cell](https://github.com/ataides-cell))
+- **Gabriel Ataides-24114290188** ([ataides-cell](https://github.com/ataides-cell))
   - Colaboração na criação das rotas, exemplos de requisição e revisão da documentação.
-- **Denys** ([denyswenceslau1](https://github.com/denyswenceslau1))
+- **Denys-24114290147** ([denyswenceslau1](https://github.com/denyswenceslau1))
   - Apoio na modelagem dos dados, revisão de código e testes de integração.
-- **Alexandre** ([Alexiesb](https://github.com/Alexiesb))
+- **Alexandre-24114290185** ([Alexiesb](https://github.com/Alexiesb))
   - Implementação dos middlewares de validação e tratamento de erros, testes das rotas e documentação.
 
